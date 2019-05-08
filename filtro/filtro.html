@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Filtro 5</title>
+    <link rel="stylesheet" href="filtro1.css">
+    <script src="filtro1.js"></script>
+    <p>
+    <h> Imagen original <h/>
+    <img src="black-hole.jpg">
+  </p>
+    <p>
+    <img src="black-hole.jpg" id="imagesrc">
+    <h> Imagen modificada <h/>
+      <p/>
+  </head>
+  <body onload="main();">
+    <canvas id="display"></canvas>
+
+    <p>Establece el umbral de rojo:</p>
+    <input type="range" id="deslizador1" min="0" max="255" value="255"/>
+    <p id="range_value1">00</p>
+
+
+    <p>Establece el umbral de verde:</p>
+    <input type="range" id="deslizador2" min="0" max="255" value="255"/>
+    <p id="range_value2">00</p>
+
+
+
+
+    <p>Establece el umbral de azul:</p>
+    <input type="range" id="deslizador3" min="0" max="255" value="255"/>
+    <p id="range_value3">00</p>
+
+    <p> Escala de grises: </p>
+    <button type="button" name="button" id="gris">  Escala de Grises </button>
+
+
+
+  </body>
+</html>
